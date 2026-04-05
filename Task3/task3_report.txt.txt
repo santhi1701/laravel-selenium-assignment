@@ -1,0 +1,39 @@
+Task 3 – Laravel HTML Template Integration
+
+Objective:
+To integrate the provided static HTML calendar template into the Laravel project and make it accessible through a route.
+
+Implementation Details:
+
+* Extracted the HTML template files from the given source
+* Copied required asset folders (app-assets, assets, vendors) into the Laravel public directory under public/template
+* Created a Blade view file (calendar.blade.php) inside resources/views
+* Copied the content of app-calendar.html into the Blade file
+* Updated all CSS, JavaScript, and image paths using Laravel's asset() helper function
+* Created a new route (/html-page) in routes/web.php to load the Blade view
+* Ran the Laravel server and tested the page in the browser
+
+Output:
+
+* The calendar page is successfully displayed at http://127.0.0.1:8000/html-page
+* All styles and scripts are loaded correctly
+* The layout, sidebar, and calendar functionality are working as expected
+
+Challenges Faced:
+
+* Asset files (CSS/JS) not loading initially
+* Incorrect file paths causing broken layout
+
+Solutions:
+
+* Fixed asset paths using {{ asset('template/...') }}
+* Verified correct folder structure inside the public directory
+
+Conclusion:
+The HTML template was successfully integrated into the Laravel project using Blade templating. The page is fully functional and accessible through the defined route.
+
+Tools & Technologies Used:
+
+* Laravel Framework
+* Blade Template Engine
+* HTML, CSS, JavaScript

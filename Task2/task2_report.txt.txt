@@ -1,0 +1,43 @@
+Task 2 – Selenium Automation of Laravel Login Page
+
+Objective:
+To automate the Laravel login page using Python Selenium by entering random email and password values.
+
+Implementation Details:
+
+1. Installed Selenium WebDriver and configured Python environment
+2. Used webdriver-manager to automatically manage ChromeDriver compatibility
+3. Opened the Laravel login page (http://127.0.0.1:8000/login) using Selenium
+4. Identified input fields dynamically from the webpage
+5. Generated random email and password values using Python
+6. Filled the email and password fields automatically
+7. Added delay to observe the automation process
+8. Closed the browser automatically after execution
+
+Output:
+
+* Browser opens successfully
+* Laravel login page loads correctly
+* Email and password fields are auto-filled with random values
+* Browser closes automatically after a few seconds
+
+Challenges Faced:
+
+* ChromeDriver version mismatch issue
+* Element identification issues (NoSuchElementException)
+* Hidden input fields causing interaction errors
+
+Solutions:
+
+* Used webdriver-manager to resolve ChromeDriver version issues
+* Applied dynamic element selection to locate visible input fields
+* Handled hidden elements using is_displayed() method
+
+Conclusion:
+The task was successfully completed by automating the Laravel login page using Selenium. The script performs all required actions efficiently and demonstrates basic web automation capabilities.
+
+Tools & Technologies Used:
+
+* Python
+* Selenium WebDriver
+* WebDriver Manager
